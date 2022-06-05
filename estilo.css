@@ -1,0 +1,120 @@
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+@keyframes izqIn {
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    background: linear-gradient(to left, rgb(206, 0, 120), rgb(13, 0, 36));
+    font-family: Blaka Hollow, cursiva;
+}
+
+.formulario{ 
+    background: rgba(183, 169, 204, 0.527);
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: -10px 10px 30px rgb(0, 0, 0);
+}
+
+.formulario h3 {
+    background:none;
+    display: inline-block;
+    color: rgb(29, 16, 63);
+    font-size: 25px;
+    margin-left: 45px;
+    margin-bottom: 30px;
+    animation: fadeIn .5s linear forwards;
+}
+
+.entrada{
+    background: rgb(171, 157, 185);
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    animation: izqIn .5s linear forwards;
+    animation-delay: calc(0.09s * var(--i));
+    opacity: 0;
+}
+
+.entrada:hover{
+    background: rgb(158, 141, 177);
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    
+}
+
+.boton{
+    width: 100%;
+    background: rgb(13, 0, 36);
+    color: rgb(210, 202, 218);
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 21px;
+}
+
+.boton:hover{
+    width: 100%;
+    background: rgb(32, 11, 70);
+    color: rgb(210, 202, 218);
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 21px;
+}
+
+.boton:active{
+    width: 100%;
+    background: rgb(13, 0, 36);
+    color: rgb(210, 202, 218);
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 21px;
+}
+
+.respuesta{
+    background: none;
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    color: antiquewhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+
